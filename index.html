@@ -25,8 +25,13 @@
     <header class="header">
       <div class="container header__container">
         <a href="#hero" class="headerlogo">
-          <img src="./images/logo.webp" width="100" height="100" alt="Logo" />
+          <img src="./images/logo.webp" width="150" height="101" alt="Logo" />
         </a>
+
+        <div class="lang-switch">
+          <a href="/index.html" class="lang-btn active">УКР</a>
+          <a href="./en/index.html" class="lang-btn">EN</a>
+        </div>
 
         <!-- ДЕСКТОП МЕНЮ (НЕ ЧІПАЄМО) -->
         <nav class="nav">
@@ -81,7 +86,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="main__title">
-            ТОВ "Міжнародне агентство корпоративної безпеки СР"
+            Міжнародне агентство корпоративної безпеки СР
           </h1>
           <p class="main__text">
             Наша команда з 2016 року допомагає бізнесу та державним структурам
@@ -133,220 +138,306 @@
         </div>
       </section>
       <!-- =================================== polygraph-development =================================== -->
-      <div class="content-grid container">
-        <div class="content-grid__left">
-          <section class="polygraph-development" id="technologies">
-            <div class="container">
-              <h2 class="polygraph-development__title">
-                ДЛЯ ПРОВЕДЕННЯ ДОСЛІДЖЕНЬ ВИКОРИСТОВУЮТЬСЯ КОМП'ЮТЕРНІ ПОЛІГРАФИ
-                "LAFAYETTE", «RUBICON POLYGRAPH» З ВІДПОВІДНИМ ПРОГРАМНИМ
-                ЗАБЕЗПЕЧЕННЯМ.
-              </h2>
-              <ul>
-                <li class="polygraph-development_item">
-                  <img
-                    src="./images/polygraph-development-01.jpg"
-                    alt="НАДІЙНІ КОНЕКТОРИ ТА ЯКІСНІ ДАТЧИКИ"
-                    width="62"
-                    height="62"
-                    class="polygraph-development__img"
-                  />
-                  <h3>НАДІЙНІ КОНЕКТОРИ ТА ЯКІСНІ ДАТЧИКИ</h3>
-                </li>
-                <li class="polygraph-development_item">
-                  <img
-                    src="./images/polygraph-development-02.jpg"
-                    alt="ЕКОЛОГІЧНО ЧИСТІ МАТЕРІАЛИ"
-                    width="62"
-                    height="62"
-                    class="polygraph-development__img"
-                  />
-                  <h3>ЕКОЛОГІЧНО ЧИСТІ МАТЕРІАЛИ</h3>
-                </li>
-                <li class="polygraph-development_item">
-                  <img
-                    src="./images/polygraph-development-03.jpg"
-                    alt="7 РЕЄСТРАЦІЙНИХ КАНАЛІВ"
-                    width="62"
-                    height="62"
-                    class="polygraph-development__img"
-                  />
-                  <h3>7 РЕЄСТРАЦІЙНИХ КАНАЛІВ</h3>
-                </li>
-                <li class="polygraph-development_item">
-                  <img
-                    src="./images/polygraph-development-04.jpg"
-                    alt="ВИСОКА ЯКІСТЬ ТЕСТУВАННЯ"
-                    width="62"
-                    height="62"
-                    class="polygraph-development__img"
-                  />
-                  <h3>ВИСОКА ЯКІСТЬ ТЕСТУВАННЯ</h3>
-                </li>
-              </ul>
-              <p>
-                Для проведення психодіагностичних досліджень застосовується
-                <span class="equipment__item-name"
-                  >спеціалізоване програмне забезпечення</span
-                >, яке за своїми
-                <span class="equipment__item-name"
-                  >функціональними можливостями</span
-                >
-                та <span class="equipment__item-name">методологією</span> є
-                аналогічним тому, що використовується в
-                <span class="equipment__item-name">правоохоронних органах</span>
-                і <span class="equipment__item-name">спеціальних службах</span>.
-                Співробітниками агенства є висококваліфіковані професіонали з
-                досвідом роботи в сфері корпоративної безпеки та кризового
-                менеджменту.
-              </p>
-            </div>
-          </section>
+      <!-- <div class="content-grid container"> -->
+      <!-- <div class="content-grid__left"> -->
+      <section class="polygraph-development" id="technologies">
+        <div class="container">
+          <h2 class="polygraph-development__title">
+            ДЛЯ ПРОВЕДЕННЯ ДОСЛІДЖЕНЬ ВИКОРИСТОВУЮТЬСЯ КОМП'ЮТЕРНІ ПОЛІГРАФИ
+            "LAFAYETTE", «RUBICON POLYGRAPH» З ВІДПОВІДНИМ ПРОГРАМНИМ
+            ЗАБЕЗПЕЧЕННЯМ.
+          </h2>
+          <ul>
+            <li class="polygraph-development_item">
+              <img
+                src="./images/polygraph-development-01.jpg"
+                alt="НАДІЙНІ КОНЕКТОРИ ТА ЯКІСНІ ДАТЧИКИ"
+                width="62"
+                height="62"
+                class="polygraph-development__img"
+              />
+              <h3>НАДІЙНІ КОНЕКТОРИ ТА ЯКІСНІ ДАТЧИКИ</h3>
+            </li>
+            <li class="polygraph-development_item">
+              <img
+                src="./images/polygraph-development-02.jpg"
+                alt="ЕКОЛОГІЧНО ЧИСТІ МАТЕРІАЛИ"
+                width="62"
+                height="62"
+                class="polygraph-development__img"
+              />
+              <h3>ЕКОЛОГІЧНО ЧИСТІ МАТЕРІАЛИ</h3>
+            </li>
+            <li class="polygraph-development_item">
+              <img
+                src="./images/polygraph-development-03.jpg"
+                alt="7 РЕЄСТРАЦІЙНИХ КАНАЛІВ"
+                width="62"
+                height="62"
+                class="polygraph-development__img"
+              />
+              <h3>7 РЕЄСТРАЦІЙНИХ КАНАЛІВ</h3>
+            </li>
+            <li class="polygraph-development_item">
+              <img
+                src="./images/polygraph-development-04.jpg"
+                alt="ВИСОКА ЯКІСТЬ ТЕСТУВАННЯ"
+                width="62"
+                height="62"
+                class="polygraph-development__img"
+              />
+              <h3>ВИСОКА ЯКІСТЬ ТЕСТУВАННЯ</h3>
+            </li>
+          </ul>
+          <p>
+            Для проведення психодіагностичних досліджень застосовується
+            <span class="equipment__item-name"
+              >спеціалізоване програмне забезпечення</span
+            >, яке за своїми
+            <span class="equipment__item-name"
+              >функціональними можливостями</span
+            >
+            та <span class="equipment__item-name">методологією</span> є
+            аналогічним тому, що використовується в
+            <span class="equipment__item-name">правоохоронних органах</span>
+            і <span class="equipment__item-name">спеціальних службах</span>.
+            Співробітниками агенства є висококваліфіковані професіонали з
+            досвідом роботи в сфері корпоративної безпеки та кризового
+            менеджменту.
+          </p>
 
           <!-- =================================== equipment =================================== -->
-          <section class="equipment">
-            <div class="container">
-              <h2>Устаткування повністю відповідає міжнародним стандартам</h2>
-              <ul>
-                <li>
-                  <p class="equipment__item">
-                    <span class="equipment__item-name">ШГР — </span>канал
-                    біоелектричної активності шкіри (шкіро-гальванічна реакція).
-                  </p>
-                </li>
-                <li>
-                  <p class="equipment__item">
-                    <span class="equipment__item-name">ФПГ — </span>канал
-                    периферичної серцево‑судинної активності
-                    (фотоплетизмограма).
-                  </p>
-                </li>
-                <li>
-                  <p class="equipment__item">
-                    <span class="equipment__item-name">Тиск — </span>канал
-                    центральної серцево‑судинної активності.
-                  </p>
-                </li>
-                <li>
-                  <p class="equipment__item">
-                    <span class="equipment__item-name">Тремор — </span>канал
-                    рухової активності (виявлення протидії).
-                  </p>
-                </li>
-                <li>
-                  <p class="equipment__item">
-                    <span class="equipment__item-name">Аудіо — </span>канал
-                    акустичної активності, мікрофон.
-                  </p>
-                </li>
-                <li>
-                  <p class="equipment__item">
-                    <span class="equipment__item-name">Пневмоканал — </span
-                    >датчики верхнього та нижнього дихання.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </section>
+
+          <h2 class="equipment__title">
+            Устаткування повністю відповідає міжнародним стандартам
+          </h2>
+          <ul>
+            <li>
+              <p class="equipment__item">
+                <span class="equipment__item-name">ШГР — </span>канал
+                біоелектричної активності шкіри (шкіро-гальванічна реакція).
+              </p>
+            </li>
+            <li>
+              <p class="equipment__item">
+                <span class="equipment__item-name">ФПГ — </span>канал
+                периферичної серцево‑судинної активності (фотоплетизмограма).
+              </p>
+            </li>
+            <li>
+              <p class="equipment__item">
+                <span class="equipment__item-name">Тиск — </span>канал
+                центральної серцево‑судинної активності.
+              </p>
+            </li>
+            <li>
+              <p class="equipment__item">
+                <span class="equipment__item-name">Тремор — </span>канал рухової
+                активності (виявлення протидії).
+              </p>
+            </li>
+            <li>
+              <p class="equipment__item">
+                <span class="equipment__item-name">Аудіо — </span>канал
+                акустичної активності, мікрофон.
+              </p>
+            </li>
+            <li>
+              <p class="equipment__item">
+                <span class="equipment__item-name">Пневмоканал — </span>датчики
+                верхнього та нижнього дихання.
+              </p>
+            </li>
+          </ul>
         </div>
+      </section>
 
-        <!-- =================================== services =================================== -->
-        <section class="services" id="services">
-          <div class="services__container container">
-            <h2 class="services__title">
-              Агентство надає послуги для бізнесу та приватним клієнтам:
-            </h2>
+      <!-- =================================== services =================================== -->
+      <section class="services" id="services">
+        <div class="services__container container">
+          <h2 class="services__title">
+            АГЕНТСТВО НАДАЄ ПОСЛУГИ ДЛЯ БІЗНЕСУ ТА ПРИВАТНИМ КЛІЄНТАМ:
+          </h2>
 
-            <article class="services__category">
-              <div class="services__category-container">
-                <h3 class="services__category-title">
-                  Поліграф для державного сектору та бізнесу
-                </h3>
-              </div>
-              <ul class="services__list">
-                <li class="services__item">
-                  <p class="services__text">
-                    перевірки з використанням поліграфу (у межах чинного
-                    законодавства та за інформованою згодою)
-                  </p>
-                </li>
-                <li class="services__item">
-                  <p class="services__text">
-                    комплексні кадрові перевірки персоналу та кандидатів
-                  </p>
-                </li>
-                <li class="services__item">
-                  <p class="services__text">
-                    перевірки на добропорядність, лояльність і наявність ризиків
-                  </p>
-                </li>
-              </ul>
-            </article>
+          <article class="services__category">
+            <div class="services__category-container">
+              <h3 class="services__category-title">
+                Поліграф для державного сектору та бізнесу
+              </h3>
+            </div>
+            <ul class="services__list">
+              <li class="services__item">
+                <p class="services__text">
+                  перевірки з використанням поліграфу (у межах чинного
+                  законодавства та за інформованою згодою)
+                </p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  комплексні кадрові перевірки персоналу та кандидатів
+                </p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  перевірки на добропорядність, лояльність і наявність ризиків
+                </p>
+              </li>
+            </ul>
+          </article>
 
-            <article class="services__category">
-              <div class="services__category-container">
-                <h3 class="services__category-title">
-                  Поліграф та аналітика для внутрішніх і приватних розслідувань
-                </h3>
-              </div>
-              <ul class="services__list">
-                <li class="services__item">
-                  <p class="services__text">
-                    внутрішні та приватні розслідування
-                  </p>
-                </li>
-                <li class="services__item">
-                  <p class="services__text">
-                    збір та аналітичну обробку інформації з легальних джерел
-                  </p>
-                </li>
-                <li class="services__item">
-                  <p class="services__text">
-                    послуги профайлінгу та поведінкового аналізу
-                  </p>
-                </li>
-                <li class="services__item">
-                  <p class="services__text">
-                    кризовий менеджмент та супровід у конфліктних ситуаціях
-                  </p>
-                </li>
-              </ul>
-            </article>
+          <article class="services__category">
+            <div class="services__category-container">
+              <h3 class="services__category-title">
+                Поліграф та аналітика для внутрішніх і приватних розслідувань
+              </h3>
+            </div>
+            <ul class="services__list">
+              <li class="services__item">
+                <p class="services__text">
+                  внутрішні та приватні розслідування
+                </p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  збір та аналітичну обробку інформації з легальних джерел
+                </p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  послуги профайлінгу та поведінкового аналізу
+                </p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  кризовий менеджмент та супровід у конфліктних ситуаціях
+                </p>
+              </li>
+            </ul>
+          </article>
 
-            <article class="services__category">
-              <div class="services__category-container">
-                <h3 class="services__category-title">
-                  Поліграф та консультації у приватних питаннях
-                </h3>
-              </div>
-              <ul class="services__list">
-                <li class="services__item">
-                  <p class="services__text">
-                    консультаційні послуги у сфері корпоративної та приватної
-                    безпеки;
-                  </p>
-                </li>
-                <li class="services__item">
-                  <p class="services__text">
-                    послуги психолога та експерта‑психолога, зокрема у складних
-                    особистих і сімейних питаннях.
-                  </p>
-                </li>
-              </ul>
-            </article>
-          </div>
-        </section>
-      </div>
+          <article class="services__category">
+            <div class="services__category-container">
+              <h3 class="services__category-title">
+                Поліграф та консультації у приватних питаннях
+              </h3>
+            </div>
+            <ul class="services__list">
+              <li class="services__item">
+                <p class="services__text">
+                  консультаційні послуги у сфері корпоративної та приватної
+                  безпеки;
+                </p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  послуги психолога та експерта‑психолога, зокрема у складних
+                  особистих і сімейних питаннях.
+                </p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="services__category">
+            <div class="services__category-container">
+              <h3 class="services__category-title">
+                Cудово-психологічна експертиза та експертні дослідження
+              </h3>
+            </div>
+            <ul class="services__list">
+              <li class="services__item">
+                <p class="services__text">
+                  проведення судових експертиз та експертних досліджень за
+                  запитами судів, адвокатів і сторін процесу, приватних осіб;
+                </p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  підготовка експертних висновків і участь спеціаліста в судових
+                  засіданнях;
+                </p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  роботи виконуються відповідно до чинного законодавства та
+                  професійних стандартів.
+                </p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="services__category">
+            <div class="services__category-container">
+              <h3 class="services__category-title">
+                Збір інформації з відкритих джерел (OSINT)
+              </h3>
+            </div>
+            <ul class="services__list">
+              <li class="services__item">
+                <p class="services__text">
+                  пошук, перевірка та аналітична обробка даних із публічно
+                  доступних джерел (офіційні реєстри, медіа, відкриті бази
+                  даних, соціальні мережі, веб-ресурси) для оцінки ризиків;
+                </p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  перевірки контрагентів і підготовки обґрунтованих висновків;
+                </p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  роботи виконуються виключно в межах чинного законодавства.
+                </p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="services__category">
+            <div class="services__category-container">
+              <h3 class="services__category-title">
+                Послуги стрільби на базі партнерського тиру
+              </h3>
+            </div>
+            <ul class="services__list">
+              <li class="services__item">
+                <p class="services__text">
+                  організація та проведення індивідуальних і групвових
+                  стрілецьких тренувань та практичних занять під керівництвом
+                  інструкторів із дотриманням вимог безпеки та чинного
+                  законодавства;
+                </p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  використання стрілецьких галерей довжиною 25 та 50 метрів;
+                </p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">різноманітні види зброї;</p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  видача сертифікатів про проходження навчання;
+                </p>
+              </li>
+              <li class="services__item">
+                <p class="services__text">супровід в отриманні дозволів.</p>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <!-- </div> -->
       <!-- =================================== approach =================================== -->
       <div class="container">
         <section class="approach-section" id="approach">
-          <h2 class="second-title approach-section-title">Підхід до роботи</h2>
+          <h2 class="second-title approach-section-title">ПІДХІД ДО РОБОТИ</h2>
           <div class="approach-section-flex">
             <img
               src="./images/approach.jpg"
               alt="Професійний аналіз результатів перевірки поліграфа"
-              width="500"
-              height="334"
+              width="517"
+              height="345"
               class="approach-img"
             />
             <!-- <img
@@ -400,6 +491,12 @@
                     судження.
                   </p>
                 </li>
+                <li class="approach-item">
+                  <p class="approach-paragraf">
+                    Наші експерти здійснюють професійну діяльність англійською,
+                    іспанською, французькою та турецькою мовами.
+                  </p>
+                </li>
               </ul>
             </div>
           </div>
@@ -410,7 +507,7 @@
       <div class="container">
         <section class="confidentiality-section" id="confidentiality">
           <h2 class="second-title confidentiality-section-title">
-            Конфіденційність і відповідальність
+            КОНФІДЕНЦІЙНІСТЬ І ВІДПОВІДАЛЬНІСТЬ
           </h2>
           <div class="confidentiality-section-flex">
             <div class="confidentiality-section-wrap">
@@ -479,7 +576,7 @@
       <div class="container">
         <section class="clients-section" id="clients">
           <h2 class="second-title clients-section-title">
-            Для кого ми працюємо
+            ДЛЯ КОГО МИ ПРАЦЮЄМО
           </h2>
           <div class="clients-section-flex">
             <img
@@ -551,7 +648,7 @@
           <div class="clients-section-flex">
             <div class="clients-section-wrap">
               <h2 class="second-title clients-section-title">
-                Наша місія - Ваш успіх
+                НАША МІСІЯ — ВАШ УСПІХ
               </h2>
               <p>
                 Мета агентства — допомогти клієнтам приймати обґрунтовані
