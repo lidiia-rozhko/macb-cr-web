@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="images/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -39,7 +39,7 @@
             <li><a href="#about" class="nav__link">About Us</a></li>
             <li><a href="#technologies" class="nav__link">Technologies</a></li>
             <li><a href="#services" class="nav__link">Services</a></li>
-            <li><a href="#team" class="nav__link">Team</a></li>
+            <li><a href="#gallery" class="nav__link">Gallery</a></li>
             <li><a href="#approach" class="nav__link">Approach</a></li>
             <li>
               <a href="#confidentiality" class="nav__link">Confidentiality</a>
@@ -71,7 +71,7 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="#technologies">Technologies</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#approach">Approach</a></li>
           <li><a href="#confidentiality">Confidentiality</a></li>
           <li><a href="#clients">Clients</a></li>
@@ -403,13 +403,76 @@
         </div>
       </section>
 
+      <!-- =================================== gallery =================================== -->
+      <section id="gallery" class="gallery-section">
+        <!-- <h2 class="second-title approach-section-title">ГАЛЕРЕЯ</h2> -->
+        <div class="carousel">
+          <button class="gallery-arrow gallery-arrow--left" onclick="prev()">
+            ‹
+          </button>
+
+          <div class="slide">
+            <img
+              src="../images/01.webp"
+              alt="A person is undergoing a polygraph test on the Rubicon device, sitting in front of the machine that records physiological responses during questioning."
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../images/10.webp"
+              alt="A person is undergoing a polygraph test on the Rubicon device, sitting in front of the machine that records physiological responses during questioning."
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../images/03.webp"
+              alt="A person is undergoing a polygraph test on the Rubicon device, sitting in front of the machine that records physiological responses during questioning."
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../images/08.webp"
+              alt="A person is undergoing a polygraph test on the Rubicon device, sitting in front of the machine that records physiological responses during questioning."
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../images/09.webp"
+              alt="A person is undergoing a polygraph test on the Rubicon device, sitting in front of the machine that records physiological responses during questioning."
+            />
+          </div>
+          <div class="slide">
+            <img src="../images/07.webp" alt="Polygraph Rubicon" />
+          </div>
+          <div class="slide">
+            <img src="../images/04.webp" alt="Polygraph Rubicon" />
+          </div>
+          <div class="slide">
+            <img src="../images/05.webp" alt="Polygraph Rubicon" />
+          </div>
+          <div class="slide">
+            <img src="../images/06.webp" alt="Polygraph Rubicon" />
+          </div>
+          <div class="slide">
+            <img
+              src="../images/02.webp"
+              alt="A person is undergoing a polygraph test on the Rubicon device, sitting in front of the machine that records physiological responses during questioning."
+            />
+          </div>
+
+          <button class="gallery-arrow gallery-arrow--right" onclick="next()">
+            ›
+          </button>
+        </div>
+      </section>
+
       <!-- APPROACH -->
       <div class="container">
         <section class="approach-section" id="approach">
           <h2 class="second-title approach-section-title">OUR APPROACH</h2>
           <div class="approach-section-flex">
             <img
-              src="../images/approach.jpg"
+              src="../images/approach.webp"
               alt="Professional analysis of polygraph results"
               width="517"
               height="345"
@@ -492,7 +555,7 @@
               </ul>
             </div>
             <img
-              src="../images/confidentiality.jpg"
+              src="../images/confidentiality.webp"
               alt="Professional analysis of polygraph results"
               width="500"
               height="334"
@@ -508,7 +571,7 @@
           <h2 class="second-title clients-section-title">WHO WE WORK FOR</h2>
           <div class="clients-section-flex">
             <img
-              src="../images/clients.jpg"
+              src="../images/clients.webp"
               alt="Professional analysis of polygraph results"
               width="500"
               height="334"
@@ -603,26 +666,7 @@
       </a>
     </footer>
 
-    <script>
-      const burger = document.getElementById("burger");
-      const menu = document.getElementById("mobile-menu");
-      const closeBtn = document.getElementById("menu-close");
-
-      function closeMenu() {
-        burger.classList.remove("open");
-        menu.classList.remove("active");
-      }
-
-      burger.addEventListener("click", () => {
-        burger.classList.toggle("open");
-        menu.classList.toggle("active");
-      });
-
-      closeBtn.addEventListener("click", closeMenu);
-
-      menu.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", closeMenu);
-      });
-    </script>
+    <script src="../js/burger.js" defer></script>
+    <script src="../js/gallery.js" defer></script>
   </body>
 </html>
