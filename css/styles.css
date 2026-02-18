@@ -42,7 +42,6 @@ p {
 
 section {
   scroll-margin-top: 120px;
-  margin: 50px 0;
   padding: 30px 0;
 }
 
@@ -257,7 +256,7 @@ section {
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: center, center;
-  /* margin-top: 60px; */
+  margin-top: 50px;
   min-height: 300px;
 }
 
@@ -460,14 +459,26 @@ h1 {
 }
 
 /* картинка */
-#gallery .slide img {
+.slide-img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow:
+    0 20px 20px rgba(0, 0, 0, 0.35),
+    0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.slide-img-vertical {
   height: 100%;
   object-fit: cover;
   border-radius: 14px;
   box-shadow:
     0 20px 40px rgba(0, 0, 0, 0.35),
     0 6px 12px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /* затемнення бокових */
@@ -721,6 +732,10 @@ footer {
   border-radius: 15px;
 }
 
+.confidentiality-img-mobile {
+  display: none;
+}
+
 .confidentiality-item {
   max-width: 500px;
   margin-bottom: 18px;
@@ -800,6 +815,23 @@ footer {
 
 .clients-item:last-child {
   margin-bottom: 0;
+}
+
+/*-------------------------------------mission------------------------------------*/
+.mission-img {
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.mission-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  margin: 0 auto;
+  text-align: justify;
 }
 
 /*-------------------------------------call button------------------------------------*/
@@ -916,6 +948,14 @@ footer {
   .contact-phone {
     padding: 0;
   }
+
+  .confidentiality-img {
+    display: none;
+  }
+
+  .confidentiality-img-mobile {
+    display: block;
+  }
 }
 
 /* -------------------------------------MOBILE VERSION------------------------------------- */
@@ -981,9 +1021,24 @@ footer {
 
   .approach-img,
   .confidentiality-img,
-  .clients-img {
+  .clients-img,
+  .confidentiality-img-mobile {
     width: 300px;
-    height: 200px;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .confidentiality-img {
+    display: none;
+  }
+
+  .confidentiality-img-mobile {
+    display: block;
+  }
+
+  .mission-img {
+    width: 300px;
+    height: auto;
   }
 
   .call-btn {
@@ -1067,56 +1122,3 @@ footer {
     right: 10px;
   }
 }
-
-/* ===== GALLERY CAROUSEL ===== */
-
-/* #gallery {
-  position: relative;
-  overflow: hidden;
-  padding: 0;
-} */
-
-/* #gallery .carousel {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  height: 500px;
-  margin: 0 auto;
-  perspective: 1400px;
-} */
-
-/* #gallery .slide {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 260px;
-  height: 360px;
-  transform-style: preserve-3d;
-  transition:
-    transform 0.5s ease,
-    opacity 0.5s ease;
-} */
-
-/* #gallery .slide img {
-  width: 600px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.35),
-    0 2px 6px rgba(0, 0, 0, 0.25);
-}
-
-#gallery .slide::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(15, 15, 15, 0.512);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  transition: opacity 0.4s;
-}
-
-#gallery .slide.active::after {
-  opacity: 0;
-} */
