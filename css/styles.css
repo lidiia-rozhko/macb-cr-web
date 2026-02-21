@@ -262,7 +262,7 @@ section {
   min-height: 300px;
 }
 
-h1 {
+.main__title {
   font-size: 48px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -273,13 +273,24 @@ h1 {
   margin: 0 auto;
 }
 
-.main__text {
-  font-size: 32px;
-  line-height: 1.56;
+.main__text,
+h1 {
   text-align: left;
   color: var(--white);
   margin-top: 24px;
   text-shadow: 2px 2px 3px var(--text-dark);
+  font-weight: 400;
+}
+
+.main__text {
+  font-size: 32px;
+  line-height: 1.56;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.2;
 }
 
 /*-------------------------------------ABOUT------------------------------------*/
@@ -1015,16 +1026,17 @@ footer {
     background-size: cover;
   }
 
+  .main__text,
   .hero h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .main__title {
     font-size: 28px;
     line-height: 1.2;
     text-align: center;
     width: 300px;
-  }
-
-  .main__text {
-    font-size: 18px;
-    text-align: center;
   }
 
   .polygraph-development__title {
@@ -1163,13 +1175,4 @@ footer {
   .contact-massenger ul {
     margin-bottom: 10px;
   }
-}
-
-.seo-hidden {
-  position: absolute;
-  left: -9999px;
-  top: -9999px;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
 }
